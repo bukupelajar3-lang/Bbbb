@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RYANZ NESIA - Dashboard</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f3f6fb;color:#172033}
+.sidebar{position:fixed;left:0;top:0;bottom:0;width:235px;background:#111827;color:#fff;padding:22px 14px}
+.logo{font-size:22px;font-weight:800;padding:10px 12px 25px}.logo span{color:#38bdf8}
+.nav{display:block;padding:12px 14px;margin:5px 0;border-radius:9px;color:#cbd5e1;text-decoration:none}.nav.active,.nav:hover{background:#1e293b;color:#fff}
+.main{margin-left:235px;padding:28px}.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:25px}.top h1{margin:0}.user{background:#fff;padding:10px 14px;border-radius:10px;box-shadow:0 2px 10px #0001}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:#fff;border-radius:14px;padding:20px;box-shadow:0 3px 14px #0000000b}.label{color:#64748b;font-size:13px}.value{font-size:25px;font-weight:800;margin-top:8px}
+.panel{background:#fff;border-radius:14px;margin-top:20px;padding:20px;box-shadow:0 3px 14px #0000000b}.btn{border:0;border-radius:9px;background:#0ea5e9;color:#fff;padding:11px 16px;cursor:pointer}
+table{width:100%;border-collapse:collapse;margin-top:14px}th,td{text-align:left;padding:13px;border-bottom:1px solid #e5e7eb}th{color:#64748b;font-size:13px}
+@media(max-width:800px){.sidebar{width:70px}.logo{font-size:0}.logo span{font-size:20px}.nav{font-size:0;text-align:center}.nav:before{content:"•";font-size:22px}.main{margin-left:70px;padding:18px}.cards{grid-template-columns:1fr 1fr}.top h1{font-size:20px}}
+</style></head>
+<body>
+<aside class="sidebar">
+<div class="logo">RYANZ <span>NESIA</span></div>
+<a class="nav active" href="#">Dashboard</a><a class="nav" href="#">Data User</a><a class="nav" href="#">Produk</a><a class="nav" href="#">Transaksi</a><a class="nav" href="#">Riwayat</a><a class="nav" href="#">Pengaturan</a>
+</aside>
+<main class="main">
+<div class="top"><h1>Dashboard</h1><div class="user">Admin • RY</div></div>
+<section class="cards">
+<div class="card"><div class="label">Total User</div><div class="value">1,248</div></div>
+<div class="card"><div class="label">Saldo</div><div class="value">Rp 2.450.000</div></div>
+<div class="card"><div class="label">Transaksi</div><div class="value">356</div></div>
+<div class="card"><div class="label">Produk Aktif</div><div class="value">24</div></div>
+</section>
+<section class="panel"><h2>Aktivitas Terbaru</h2>
+<table><tr><th>Aktivitas</th><th>Status</th><th>Waktu</th></tr>
+<tr><td>Transaksi baru</td><td>Sukses</td><td>Baru saja</td></tr>
+<tr><td>User baru terdaftar</td><td>Aktif</td><td>5 menit lalu</td></tr>
+<tr><td>Pembaruan produk</td><td>Selesai</td><td>12 menit lalu</td></tr></table></section>
+<section class="panel"><h2>Panel Ryanz Nesia</h2><p>Dashboard awal siap dikembangkan dengan backend dan database.</p><button class="btn" onclick="alert('Fitur siap dikembangkan')">Kelola Panel</button></section>
+</main></body></html>
